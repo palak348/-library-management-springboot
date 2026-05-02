@@ -1,0 +1,13 @@
+package com.library.service;
+
+import com.library.entity.Book;
+import java.util.List;
+
+public interface BookService {
+    List<Book> getAllBooks();
+    List<Book> getAllBooksWithAuthors();
+    Book getById(Long id);
+    Book save(Book book);
+    Book update(Book book);
+    void deleteById(Long id);
+}
